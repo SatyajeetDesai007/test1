@@ -19,6 +19,13 @@ jobs:
         with:
           java-version: '20'
           distribution: 'temurin'
+          
+      - name: Print working directory
+        run: |
+          echo "Current working directory: %cd%"   # Windows command to print current directory
+          echo "Listing files:"
+          dir
+        
 
       - name: Cache Maven dependencies
         uses: actions/cache@v2
