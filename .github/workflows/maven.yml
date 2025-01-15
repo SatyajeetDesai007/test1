@@ -25,6 +25,11 @@ jobs:
           echo "Current working directory: %cd%"   # Windows command to print current directory
           echo "Listing files:"
           dir
+
+      - name: Print directory structure
+        run: |
+          echo "Printing directory structure..."
+          dir /s
         
 
       - name: Cache Maven dependencies
