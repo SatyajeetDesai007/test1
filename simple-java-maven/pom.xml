@@ -35,6 +35,9 @@
                     <source>20</source>
                     <target>20</target>
                 </configuration>
+                <configuration>
+                  <failOnMissingWebXml>false</failOnMissingWebXml> <!-- Skip web.xml -->
+                </configuration>
             </plugin>
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
