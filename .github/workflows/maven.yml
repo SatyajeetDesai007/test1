@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest  # This specifies that we are using Windows for this job.
+    runs-on: ubuntu-latest  # This specifies that we are using Windows for this job.
 
     steps:
       - name: Checkout repository
@@ -37,8 +37,6 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package
-        working-directory: D:\a\test1\test1
-        env:
-          JAVA_HOME: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\20.0.2-9\x64
-          JAVA_HOME_20_X64: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\20.0.2-9\x64
+        working-directory: simmple-java-maven
+        
 
