@@ -1,0 +1,38 @@
+name: Build WAR File   # Name of the workflow.
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: windows-latest  
+
+    steps:
+      # Step 1: Checkout the repository.
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+
+      # Step 2: Set up Java JDK 20.
+      - name: Set up Java JDK 20
+        uses: actions/setup-java@v3
+        with:
+          java-version: '20'  
+
+      # Step 3: Cache Maven dependencies to speed up builds.
+      - name: Cache Maven dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository  
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}  # Use the hash of the 'pom.xml' to define the cache key.
+          restore-keys: |
+            ${{ runner.os }}-maven-  # Cache restore key in case the specific hash is not found.
+
+      # Step 4: Build the project with Maven.
+      - name: Build with Maven
+        run: mvn clean package  # Run 'mvn clean package' to create the WAR file.
+        env:
+          JAVA_HOME: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\20.0.2-9\x64  # Set JAVA_HOME for Maven to use JDK 20
+          JAVA_HOME_20_X64: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\20.0.2-9\x64  # Ensure the correct JDK version.

@@ -1,0 +1,42 @@
+name: Build WAR File
+
+on:
+  push:
+    branches:
+      - main   # Trigger on push to the main branch
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # This specifies that we are using Windows for this job.
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Java JDK 20
+        uses: actions/setup-java@v3
+        with:
+          java-version: '20'
+          distribution: 'corretto'
+          
+      - name: Print working directory
+        run: |
+          echo "Current working directory: %cd%"   # Windows command to print current directory
+          echo "Listing files:"
+          dir
+        
+
+      - name: Cache Maven dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Build with Maven
+        run: mvn clean package
+        working-directory: ./simple-java-maven
+        
+
