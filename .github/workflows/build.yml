@@ -25,7 +25,7 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t satyajeetdesai/hello-world-app:$GITHUB_SHA .
+        docker build -f ./dockerfile -t satyajeetdesai/hello-world-app:$GITHUB_SHA .
         docker tag satyajeetdesai/hello-world-app:$GITHUB_SHA satyajeetdesai/hello-world-app:latest
 
     - name: Log in to Docker Hub
