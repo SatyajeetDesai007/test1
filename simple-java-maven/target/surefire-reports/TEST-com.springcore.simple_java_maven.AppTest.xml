@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.springcore.simple_java_maven.AppTest" time="0.041" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.springcore.simple_java_maven.AppTest" time="0.023" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\satya\maven\simple-java-maven\target\test-classes;C:\Users\satya\maven\simple-java-maven\target\classes;C:\Users\satya\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.class.path" value="C:\Users\satya\maven\simple-java-maven\target\test-classes;C:\Users\satya\maven\simple-java-maven\target\classes;C:\Users\satya\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\satya\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\satya\Downloads\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\satya\AppData\Local\Temp\surefire1117039692919106166\surefirebooter-20250116225053560_3.jar C:\Users\satya\AppData\Local\Temp\surefire1117039692919106166 2025-01-16T22-50-53_360-jvmRun1 surefire-20250116225053560_1tmp surefire_0-20250116225053560_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\satya\AppData\Local\Temp\surefire9079657472872323702\surefirebooter-20250118021248128_3.jar C:\Users\satya\AppData\Local\Temp\surefire9079657472872323702 2025-01-18T02-12-47_979-jvmRun1 surefire-20250118021248128_1tmp surefire_0-20250118021248128_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\satya\maven\simple-java-maven\target\test-classes;C:\Users\satya\maven\simple-java-maven\target\classes;C:\Users\satya\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\satya\maven\simple-java-maven\target\test-classes;C:\Users\satya\maven\simple-java-maven\target\classes;C:\Users\satya\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\satya\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\satya"/>
     <property name="user.language" value="en"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\satya\AppData\Local\Temp\surefire1117039692919106166\surefirebooter-20250116225053560_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\satya\AppData\Local\Temp\surefire9079657472872323702\surefirebooter-20250118021248128_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.3+9-LTS"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testApp" classname="com.springcore.simple_java_maven.AppTest" time="0.006"/>
+  <testcase name="testApp" classname="com.springcore.simple_java_maven.AppTest" time="0.004"/>
 </testsuite>

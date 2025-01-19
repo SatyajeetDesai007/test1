@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
+         <display-name>Simple Java Maven Application</display-name>
 
     <!-- Welcome file configuration -->
     <welcome-file-list>
@@ -13,11 +14,11 @@
     <!-- Example Servlet -->
     <servlet>
         <servlet-name>ExampleServlet</servlet-name>
-        <servlet-class>com.example.ExampleServlet</servlet-class>
+        <servlet-class>com.springcore.ExampleServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ExampleServlet</servlet-name>
-        <url-pattern>/example</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
 </web-app>
