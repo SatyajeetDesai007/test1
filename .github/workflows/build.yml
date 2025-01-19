@@ -24,7 +24,7 @@ jobs:
       working-directory: ./hello-world-app
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-world-app:${GITHUB_SHA} .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-world-app:${GITHUB_SHA} ./hello-world-app
 
 
     - name: Log in to Docker Hub
